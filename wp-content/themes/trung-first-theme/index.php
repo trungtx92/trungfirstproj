@@ -5,7 +5,7 @@
     while(have_posts()){
         the_post();
 ?>
-    <h3><?php the_title();?></h3>
+    <a href="<?php the_permalink()?>"><?php the_title();?></a>
     <?php the_content();?>
     <?php } ?>
 <?php
