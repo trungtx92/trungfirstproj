@@ -16,7 +16,11 @@
       <div class="full-width-split__inner">
         <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
         
-        <div id="eventbrite-widget-container-96358935169"></div>
+        <!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.com.au/e/bold-and-beautiful-tickets-96358935169" rel="noopener noreferrer" target="_blank"></noscript>
+<!-- You can customize this button any way you like -->
+<button id="eventbrite-widget-modal-trigger-96358935169" type="button">Buy Tickets</button>
+<noscript></a>Buy Tickets on Eventbrite</noscript>
 
 <script src="https://www.eventbrite.com.au/static/widgets/eb_widgets.js"></script>
 
@@ -26,14 +30,11 @@
     };
 
     window.EBWidgets.createWidget({
-        // Required
         widgetType: 'checkout',
         eventId: '96358935169',
-        iframeContainerId: 'eventbrite-widget-container-96358935169',
-
-        // Optional
-        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-96358935169',
+        onOrderComplete: exampleCallback
     });
 </script>
         
