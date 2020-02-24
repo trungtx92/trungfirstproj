@@ -16,26 +16,26 @@
       <div class="full-width-split__inner">
         <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
         
-        <div class="event-summary">
-          <a class="event-summary__date t-center" href="#">
-            <span class="event-summary__month">Mar</span>
-            <span class="event-summary__day">25</span>  
-          </a>
-          <div class="event-summary__content">
-            <h5 class="event-summary__title headline headline--tiny"><a href="#">Poetry in the 100</a></h5>
-            <p>Bring poems you&rsquo;ve wrote to the 100 building this Tuesday for an open mic and snacks. <a href="#" class="nu gray">Learn more</a></p>
-          </div>
-        </div>
-        <div class="event-summary">
-          <a class="event-summary__date t-center" href="#">
-            <span class="event-summary__month">Apr</span>
-            <span class="event-summary__day">02</span>  
-          </a>
-          <div class="event-summary__content">
-            <h5 class="event-summary__title headline headline--tiny"><a href="#">Quad Picnic Party</a></h5>
-            <p>Live music, a taco truck and more can found in our third annual quad picnic day. <a href="#" class="nu gray">Learn more</a></p>
-          </div>
-        </div>
+        <div id="eventbrite-widget-container-96358935169"></div>
+
+<script src="https://www.eventbrite.com.au/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '96358935169',
+        iframeContainerId: 'eventbrite-widget-container-96358935169',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
         
         <p class="t-center no-margin"><a href="#" class="btn btn--blue">View All Events</a></p>
 
