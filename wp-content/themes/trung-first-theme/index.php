@@ -15,27 +15,24 @@
     <div class="full-width-split__one">
       <div class="full-width-split__inner">
         <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
-        
         <div id="eventbrite-widget-container-96358935169"></div>
+        <script src="https://www.eventbrite.com.au/static/widgets/eb_widgets.js"></script>
+        <script type="text/javascript">
+            var exampleCallback = function() {
+                console.log('Order complete!');
+            };
 
-<script src="https://www.eventbrite.com.au/static/widgets/eb_widgets.js"></script>
+            window.EBWidgets.createWidget({
+                // Required
+                widgetType: 'checkout',
+                eventId: '96358935169',
+                iframeContainerId: 'eventbrite-widget-container-96358935169',
 
-<script type="text/javascript">
-    var exampleCallback = function() {
-        console.log('Order complete!');
-    };
-
-    window.EBWidgets.createWidget({
-        // Required
-        widgetType: 'checkout',
-        eventId: '96358935169',
-        iframeContainerId: 'eventbrite-widget-container-96358935169',
-
-        // Optional
-        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-    });
-</script>
+                // Optional
+                iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+            });
+        </script>
         
         <p class="t-center no-margin"><a href="#" class="btn btn--blue">View All Events</a></p>
 
@@ -45,26 +42,27 @@
       <div class="full-width-split__inner">
         <h2 class="headline headline--small-plus t-center">From Our Blogs</h2>
 
-        <div class="event-summary">
-          <a class="event-summary__date event-summary__date--beige t-center" href="#">
-            <span class="event-summary__month">Jan</span>
-            <span class="event-summary__day">20</span>  
-          </a>
-          <div class="event-summary__content">
-            <h5 class="event-summary__title headline headline--tiny"><a href="#">We Were Voted Best School</a></h5>
-            <p>For the 100th year in a row we are voted #1. <a href="#" class="nu gray">Read more</a></p>
-          </div>
-        </div>
-        <div class="event-summary">
-          <a class="event-summary__date event-summary__date--beige t-center" href="#">
-            <span class="event-summary__month">Feb</span>
-            <span class="event-summary__day">04</span>  
-          </a>
-          <div class="event-summary__content">
-            <h5 class="event-summary__title headline headline--tiny"><a href="#">Professors in the National Spotlight</a></h5>
-            <p>Two of our professors have been in national news lately. <a href="#" class="nu gray">Read more</a></p>
-          </div>
-        </div>
+        <!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.com.au/e/bold-and-beautiful-tickets-96358935169" rel="noopener noreferrer" target="_blank"></noscript>
+<!-- You can customize this button any way you like -->
+<button id="eventbrite-widget-modal-trigger-96358935169" type="button">Buy Tickets</button>
+<noscript></a>Buy Tickets on Eventbrite</noscript>
+
+<script src="https://www.eventbrite.com.au/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '96358935169',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-96358935169',
+        onOrderComplete: exampleCallback
+    });
+</script>
         
         <p class="t-center no-margin"><a href="#" class="btn btn--yellow">View All Blog Posts</a></p>
       </div>
