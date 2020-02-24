@@ -19,7 +19,7 @@
         <!-- Noscript content for added SEO -->
 <noscript><a href="https://www.eventbrite.com.au/e/bold-and-beautiful-tickets-96358935169" rel="noopener noreferrer" target="_blank"></noscript>
 <!-- You can customize this button any way you like -->
-<button id="eventbrite-widget-modal-trigger-96358935169 btn-primary" type="button">Buy Tickets</button>
+<button id="eventbrite-widget-modal-trigger-96358935169" class="btn-primary" type="button">Buy Tickets</button>
 <noscript></a>Buy Tickets on Eventbrite</noscript>
 
 <script src="https://www.eventbrite.com.au/static/widgets/eb_widgets.js"></script>
